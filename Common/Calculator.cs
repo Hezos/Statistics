@@ -1,12 +1,13 @@
-﻿namespace Common;
-
-public class Calculator
+﻿namespace Common
 {
-    public string Operation { get; set; } = "";
-    public double Value { get; set; } = 0;
-    public Calculator(string operation, double value)
+    public class Calculator
     {
-        Operation = operation;
-        Value = value;
+        public string Operation { get; set; } = "";
+        public double Value { get; set; } = 0;
+        public Calculator(string operation, double value)
+        {
+            Operation = operation;
+            Value = value;
+        }
     }
 }

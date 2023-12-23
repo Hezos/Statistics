@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-
+using Common;
 
 namespace MyApp.Namespace
 {
@@ -10,9 +10,8 @@ namespace MyApp.Namespace
     {
         [HttpGet(Name = "Calculator")]
         public ActionResult<string> Result(){
-            
-            
-            return "Handling Request";
+            Calculator calculator = new Calculator("Operation name", 1);
+            return calculator.Operation;
         }
     }
 }
